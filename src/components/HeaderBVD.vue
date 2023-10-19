@@ -1,34 +1,40 @@
 <template>
     <header>
-        <div class="header-des_top flex">
-            <div class="header-des__city flex">
-                <sapn>Ваш город:</sapn>
+      <div class="header-des">
+        <div class="conteiner">
+            <div class="header-des_top">
+            <div class="header-des__city flex mr-7">
+                <sapn class="mr-1">Ваш город:</sapn>
                 <div class="" role="button" tabindex="0">Вологда</div>
             </div>
-            <div title="Бесплатная доставка по РФ">Бесплатная доставка по РФ</div>
-            <div>С 10 до 21, без выходных</div>
-            <a href="https://wa.me/79522887789?roistat_visit=9567643">
+            <div title="Бесплатная доставка по РФ" class="mr-7">Бесплатная доставка по РФ</div>
+            <div class="mr-auto">С 10 до 21, без выходных</div>
+            <a href="https://wa.me/79522887789?roistat_visit=9567643" class="header-des__contact text-[#48c95f;]">
                 <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="icon whats app" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-icon-whats-app b-icon bi">
                     <g><path fill-rule="evenodd" clip-rule="evenodd" d="M16 7.6A7.82 7.82 0 0 0 8.15 0 7.83 7.83 0 0 0 .3 7.45l-.01.34c0 1.48.41 2.85 1.13 4.03L0 16l4.35-1.38A7.87 7.87 0 0 0 16 7.79v-.2Zm-7.85 6.75c-1.35 0-2.6-.4-3.64-1.09l-2.54.81.83-2.43a6.49 6.49 0 0 1-1.23-4.48 6.6 6.6 0 0 1 6.58-5.92 6.6 6.6 0 0 1 6.6 6.55 6.59 6.59 0 0 1-6.6 6.56Z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.74 9.47c-.19-.1-1.13-.56-1.31-.62-.18-.07-.3-.1-.44.1-.12.19-.5.62-.6.74-.12.13-.23.15-.43.05-.19-.1-.8-.3-1.54-.95a5.7 5.7 0 0 1-1.07-1.32c-.11-.19-.01-.3.08-.39l.3-.33.06-.1c.05-.06.08-.13.12-.22.07-.13.04-.24-.01-.34l-.6-1.42c-.16-.38-.32-.31-.43-.31l-.37-.02a.71.71 0 0 0-.51.24c-.18.19-.68.65-.68 1.6 0 .22.04.44.1.65.2.67.62 1.22.69 1.32.1.12 1.33 2.12 3.29 2.88 1.96.77 1.96.51 2.31.48.35-.03 1.14-.46 1.3-.9.16-.45.16-.84.11-.92-.05-.07-.17-.12-.37-.22">
                     </path></g>
                 </svg>
             </a>
-            <a href="https://tlgg.ru/spbBVD?roistat_visit=9567643">
+            <a href="https://tlgg.ru/spbBVD?roistat_visit=9567643" class="header-des__contact text-[#2aa0da]">
                 <svg viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="icon telegram" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-icon-telegram b-icon bi">
                     <g><path fill-rule="evenodd" clip-rule="evenodd" d="m13.54 14.15 2.41-11.87c.1-.5.04-.86-.17-1.08-.21-.22-.5-.26-.84-.12L.74 6.78c-.31.13-.53.27-.64.43-.12.16-.13.31-.04.45.08.15.26.26.52.34l3.63 1.18 8.43-5.53c.23-.16.4-.2.52-.1.08.05.06.14-.06.25l-6.82 6.43-.26 3.9c.25 0 .5-.13.74-.38l1.77-1.78 3.68 2.83c.7.4 1.14.2 1.33-.65Z">
                     </path></g>
                 </svg>
             </a>
-            <div tabindex="0">
+            <div tabindex="0" class="header-des__phone">
                 <a href="tel:+78003505818">8 (800) 350-58-18</a>
             </div>
         </div>
+        </div>
+      </div>
     </header>
+
+    <!-- Панель с меню и прочим -->
     <div class="header-panel ">
         <div class="header-panel__wrapper mx-auto rounded">
             <div class="header-panel__conteiner px-10 py-4">
-                <a class="w-16 py-1 mr-3" href="/">
-                    <img src="../views/headerlogoBVD.svg">
+                <a class="header-panel__link-logo" href="/">
+                    <img src="../views/headerlogoBVD.svg" alt="Интернет-магазин bvdshop.ru" class="header-panel__logo">
                 </a>
                 <!-- Кнопка каталога -->
                 <button class="header-panel__catalog-btn rounded-full">
@@ -36,7 +42,7 @@
                         </path><path d="M.1 7.611a.8.8 0 0 1 1.089-.31L8 11.085 14.811 7.3a.8.8 0 0 1 .777 1.398l-7.2 4a.8.8 0 0 1-.777 0l-7.2-4a.8.8 0 0 1-.31-1.088Z"></path><path d="M.1 10.811a.8.8 0 0 1 1.089-.31L8 14.285l6.811-3.784a.8.8 0 1 1 .777 1.398l-7.2 4a.8.8 0 0 1-.777 0l-7.2-4a.8.8 0 0 1-.31-1.088Z">
                         </path></g>
                     </svg>
-                    Privet
+                    Каталог
                 </button>
 
                 <!-- Ссылки на разделы -->
@@ -90,9 +96,35 @@
 </script>
 
 <style lang="scss">
+.header-des {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.conteiner {
+    width: 1080px;
+    margin: 0px auto;
+    padding: 0px 40px;
+}
+.header-des_top {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 20px 0px;
+}
+.header-des__contact {
+    font-size: 20px;
+    margin-left: 1rem;
+}
+.header-des__phone {
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 1.75rem;
+}
+
 .header-panel {
     position: sticky;
-    margin-top: 20px;
+    top: 20px;
 }
 
 .header-panel__wrapper {
@@ -100,7 +132,14 @@
     border: 1px solid #f0f0f0;
     box-shadow: 4px 4px 40px rgba(0,0,0,.05);
 }
-
+.header-panel__link-logo {
+    margin-right: 1.85rem;
+    position: relative;
+}
+.header-panel__logo {
+    width: 60px;
+    height: 42px;
+}
 .header-panel__conteiner {
     display: flex;
     align-items: center;
@@ -113,12 +152,17 @@
     align-items: center;
     padding: 15px 20px;
     margin-right: 35px;
+    font-size: 16px;
+    color: white;
 }
 .header-panel__link {
+    font-size: 16px;
+    font-weight: 400;
     position: relative;
     margin-right: 15px;
     box-sizing: border-box;
     height: 24px;
+
 }
 .header-panel__menu-link {
     display: flex;
